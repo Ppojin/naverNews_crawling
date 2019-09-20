@@ -40,7 +40,7 @@ while 1:
     btnNext = findCsss(driver, "a.next")
     for article in findCsss(driver, "ul.type01 > li"):
         source = findCss(article, "span._sp_each_source").text
-        regex = re.compile(r"네이버뉴스|보내기| |"+source)
+        regex = re.compile(r"네이버뉴스|보내기| |[A-Z]*[0-9]*면([0-9]단| )|"+source)
         jsonArticle = {
             'url': findCss(article, "a._sp_each_url").get_attribute("href"),
             'title': findCss(article, "a._sp_each_title").get_attribute("title"),
