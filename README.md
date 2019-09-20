@@ -2,10 +2,10 @@
  네이버뉴스 크롤링
 
 ## 환경
-mac
-python 3.7.4
- - selenium
-chrome 76
+ - mac
+ - python 3.7.4
+   - selenium
+ - chrome 76
 
 ## 사용법
 ```
